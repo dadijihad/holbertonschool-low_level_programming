@@ -1,20 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+void printAlphabet(void);
 
 int main(void)
 {
-	char low;
-
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		putchar('\n');
-
-	return (0);
+    printAlphabet();
+    putchar('\n');  // Imprimer un caractère de nouvelle ligne après l'alphabet
+    return 0;
 }
+
+void printAlphabet(void)
+{
+    char low;
+
+    for (low = 'a'; low <= 'z'; low++)
+    {
