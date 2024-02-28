@@ -1,20 +1,20 @@
 #include "main.h"
+
 /**
  * print_line - more_functions.
  */
 void print_line(int n)
 {
-	int a = 0;
-
-	if (n > 0)
-	{
-		while (a <= n)
-		{
-			_putchar('_');
-			a++;
-		}
-	 _putchar('\n');
-	}
-	else
-	_putchar('\n');
+    if (n > 0)
+    {
+        for (int i = 0; i < n; ++i)
+        {
+            _putchar('_');
+        }
+        _putchar('\n');
+    }
+    else
+    {
+        _putchar('\n');
+    }
 }
