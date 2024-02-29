@@ -1,21 +1,18 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * print_line - _putchar.c.
- * @n: is the integer for the paramaters of my function
+ * main - prints numbers between 0 to 9.
+ *
+ * Return: 0.
  */
-void print_line(int n)
+int main(void)
 {
-	int a = 0;
+	int n;
 
-	if (n > 0)
-	{
-		while (a <= n)
+	for (n = 0; n < 10; n++)
 		{
-			_putchar('_');
-			a++;
+			putchar(n +'0');
 		}
-	 _putchar('\n');
-	}
-	else
-	_putchar('\n');
+		_putchar('\n');
+		return (0);
 }
