@@ -1,0 +1,7 @@
+let g:ale_linters = {'c':['betty-style', 'betty-doc', 'gcc']} "add betty to ale linters
+
+"Call Vim-plug
+call plug#begin('~/.vim/plugged')
+    Plug 'dense-analysis/ale'|          "to install ALE
+    Plug 'bstevary/betty-in-vim'|       "to install the script
+call plug#end()
