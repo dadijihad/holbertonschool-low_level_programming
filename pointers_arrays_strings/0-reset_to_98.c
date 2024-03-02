@@ -1,7 +1,7 @@
 #include"main.h"
 /**
 *reset_to_98 - betty
-@n: value
+*@n: value
 */
 void reset_to_98(int *n)
 {
