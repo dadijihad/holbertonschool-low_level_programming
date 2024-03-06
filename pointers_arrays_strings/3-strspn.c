@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *_strspn-retourns the number of bytes in the initial segment*@s:segment tageted
- *@accept:reference bytes
- *returns the number of bytes in the initial
- */
+*_strspn-retourns the number of bytes in the initial segment*@s:segment tageted
+*@accept:reference bytes
+*returns the number of bytes in the initial
+*/
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int bytes = 0;
@@ -19,9 +19,9 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			else if ((accept[i + 1]) == '\0')
-				return(bytes);
+				return (bytes);
 		}
 		s++;
 	}
 	return (bytes);
-} 
+}
