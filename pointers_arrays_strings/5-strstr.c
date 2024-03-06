@@ -4,7 +4,7 @@
 *of the substring needle in the sting haystack
 *the terminating null bytes (\0) are not compared
 *@haystack: string were the search is made
-*@needle: returns a ponter to the beginning of the located 
+*@needle:string whose occurence is searched in haystack 
 */
 
 char *_strstr(char *haystack, char *needle)
