@@ -1,27 +1,27 @@
 #include "main.h"
 /**
-*_strspn-retourns the number of bytes in the initial segment*@s:segment tageted
-*@accept:reference bytes
-*returns the number of bytes in the initial
-*/
+ *_strspn-retourns the number of bytes in the initial segment*@s:segment tageted
+ *@accept:reference bytes
+ *returns the number of bytes in the initial
+ */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int bytes = 0;
-int i;
+	unsigned int bytes = 0;
+	int i;
 
-while (*s)
-{
-	for (i = 0; accept[i]; i++)
+	while (*s)
 	{
-		if (accept[i] == *s)
+		for (i = 0; accept[i]; i++)
 		{
-			bytes++;
-			break;
+			if (accept[i] == *s)
+			{
+				bytes++;
+				break;
+			}
+			else if ((accept[i + 1]) == '\0')
+				return(bytes);
 		}
-		else if ((accept[i + 1]) == '\0')
-		return(bytes);
-	}
-	s++;
+		s++;
 	}
 	return (bytes);
 } 
