@@ -3,7 +3,7 @@
 *_pow_recursion - returns the value of x raised to y
 *@x: the base
 *@y: the pow
-*Return : pow
+*Return : -1
 */
 int _pow_recursion(int x, int y)
 {
