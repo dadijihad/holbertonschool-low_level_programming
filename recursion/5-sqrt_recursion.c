@@ -1,17 +1,17 @@
 #include "main.h"
 /**
-*checker - check the code
-*@racine_probable: number is squared and compared against base
-*@valeur_test: base number to check
+*_sqrt - check the code
+*@n: number is squared and compared against base
+*@x: base number to check
 *Return: Always puissance.
 */
-int checker(int racine_probable, int valeur_test)
+int _sqrt(int n, int x)
 {
-	if (racine_probable * racine_probable == valeur_test)
-	return (racine_probable);
-	if (racine_probable * racine_probable > valeur_test)
+	if (n * n == x)
+	return (n);
+	if ( n * n > x)
 	return (-1);
-	return (checker(racine_probable + 1, valeur_test));
+	return (_sqrt(n + 1, x));
 }
 /**
 *_sqrt_recursion - return the natural square root of
@@ -20,5 +20,5 @@ int checker(int racine_probable, int valeur_test)
 */
 int _sqrt_recursion(int n)
 {
-	return (checker(1, n));
+	return (_sqrt(1, n));
 }
