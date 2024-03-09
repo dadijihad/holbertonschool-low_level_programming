@@ -7,11 +7,11 @@
 */
 int checker(int racine_probable, int valeur_test)
 {
-        if (racine_probable * racine_probable == valeur_test)
-                return (racine_probable);
-        if (racine_probable * racine_probable > valeur_test)
-                return (-1);
-        return (checker(racine_probable + 1, valeur_test));
+	if (racine_probable * racine_probable == valeur_test)
+	return (racine_probable);
+	if (racine_probable * racine_probable > valeur_test)
+	return (-1);
+	return (checker(racine_probable + 1, valeur_test));
 }
 /**
 *_sqrt_recursion - return the natural square root of
@@ -20,5 +20,5 @@ int checker(int racine_probable, int valeur_test)
 */
 int _sqrt_recursion(int n)
 {
-        return (checker(1, n));
+	return (checker(1, n));
 }
