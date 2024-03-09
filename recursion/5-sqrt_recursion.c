@@ -1,24 +1,36 @@
 #include "main.h"
 /**
-*_sqrt - check the code
-*@n: number is squared and compared against base
-*@x: base number to check
-*Return: Always puissance.
+*checker - check the code
+*@nombre_diviseur: The character to print
+*@valeur_test: The character to print
+*Return: Always int.
 */
-int _sqrt(int n, int x)
+int checker(int nombre_diviseur, int valeur_test)
 {
-	if (n * n == x)
-	return (n);
-	if (n * n > x)
-	return (-1);
-	return (_sqrt(n + 1, x));
+	if (valeur_test <= 1)
+	{
+		return (0);
+	}
+	else if (nombre_diviseur == 1)
+	{
+		return (1);
+	}
+	else if (valeur_test % nombre_diviseur == 0)
+	{
+		return (0);
+	}
+	else
+	{
+		return (checker(nombre_diviseur - 1, valeur_test));
+	}
 }
+
 /**
-*_sqrt_recursion - return the natural square root of
-*@n: number to check for square roots.
-*Return: the natural square root of number n
+*is_prime_number - check the code
+*@n: The character to print
+*Return: Always int.
 */
-int _sqrt_recursion(int n)
+int is_prime_number(int n)
 {
-	return (_sqrt(1, n));
+	return (checker(n - 1, n));
 }
