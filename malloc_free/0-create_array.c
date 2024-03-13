@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *create_array - create array of chars
- *@size: the size of the memroy
- *@c: specific char 
- *return: a pointer to the array or NULL if it fails
- */
+*create_array - create array of chars
+*@size: the size of the memroy
+*@c: specific char 
+*return: a pointer to the array or NULL if it fails
+*/
 
 char *create_array(unsigned int size, char c)
 {
