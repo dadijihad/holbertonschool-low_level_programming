@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *alloc_grid - return a pointer to a 2 dimensional
- *width: int size width
- *heignt: int size height
- *Return: nothing
- */
+*alloc_grid - return a pointer to a 2 dimensional
+*width: int size width
+*heignt: int size height
+*Return: nothing
+*/
 int **alloc_grid(int width, int height)
 {
 	int **grid;
