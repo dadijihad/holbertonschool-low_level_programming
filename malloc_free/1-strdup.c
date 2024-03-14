@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*_strdup - return a pointer to a newly allocated in memory
-*@str: string to duplicate 
-*Return: pointerrr to new string
-*/
+ *_strdup - return a pointer to a newly allocated in memory
+ *@str: string to duplicate 
+ *Return: pointerrr to new string
+ */
 char *_strdup(char *str)
 {
 	char *a;
