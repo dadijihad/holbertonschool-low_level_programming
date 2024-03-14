@@ -1,8 +1,8 @@
 #include "main.h"
 /**
 *str_concat - concatenates two strings
-*@s1:First string
-*@s2:Second string
+*@s1: First string
+*@s2: Second string
 *Return: a newly allocated space in memory
 */
  
