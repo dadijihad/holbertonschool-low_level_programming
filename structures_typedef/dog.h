@@ -1,5 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
+/**
+*struct dog - structure nommee dog
+*@name: membre de la structure de type char*
+*@age: membe de la structure de type float
+*@owner: membre de la structure de type char
+*/
 
 typedef struct dog
 {
