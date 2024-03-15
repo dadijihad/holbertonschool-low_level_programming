@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *_strdup - return a pointer to a newly allocated in memory
- *@str: string to duplicate 
- *Return: pointerrr to new string
+ *@str: string to duplicate
+ *Return: pointer to new string
  */
 char *_strdup(char *str)
 {
@@ -12,9 +12,10 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	for (i = 0; str[i] != '\0'; i++);
+	for (i = 0; str[i] != '\0'; i++;)
 
 	a = malloc(i * sizeof(*a) + 1);
+
 	if (a == NULL)
 		return (NULL);
 
